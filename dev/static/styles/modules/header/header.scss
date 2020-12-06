@@ -3,14 +3,16 @@ header { flex: 0 0 auto; }
    &--margin {
      margin: -70px -25px -95px 0;
    }
-  &__image {
-
-  }
   &__link {
     display: block;
   }
 }
 .header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
   &__top {
     font-family: $font-gilroy;
     background-color: #fefaf4;

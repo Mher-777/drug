@@ -1,0 +1,36 @@
+.intro {
+  &__bg {
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 110px;
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 665px;
+    width: 100%;
+    margin-top: 75px;
+  }
+  &__image {
+    max-width: 790px;
+    width: 100%;
+  }
+  &__btn {
+    margin-top: 50px;
+  }
+  &__title {
+    font-size: 72px;
+    line-height: .85;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  &__text {
+    max-width: 515px;
+    font-size: 22px;
+  }
+}
