@@ -15,7 +15,7 @@
         <div class="header__top">
           <div class="container">
             <div class="header__top-inner">
-              <nav class="header__menu">
+              <nav class="header__menu" data-da="menu, 1, 650">
                 <ul class="header__menu-list">
                   <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
                   <li class="header__menu-item"><a class="header__menu-link" href="#">Сотрудничество</a></li>
@@ -40,7 +40,7 @@
                   <svg class="icon icon-fb header__socials-icon">
                     <use xlink:href="static/images/sprite/symbol/sprite.svg#fb"></use>
                   </svg></a></div>
-              <div class="header__info">
+              <div class="header__info" data-da="menu, 2, 650">
                 <div class="header__info-top"><a class="header__info-phone" href="tel:+88002274564">
                     <svg class="icon icon-phone header__info-icon">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
@@ -76,6 +76,7 @@
                       </div>Корзина (19320₽)</a></li>
                 </ul>
               </nav>
+              <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
             </div>
           </div>
         </div>
@@ -84,20 +85,115 @@
         <section class="intro">
           <div class="intro__bg" data-bg="static/images/content/intro/intro-bg.jpg" data-webp-bg="static/images/content/intro/intro-bg.jpg">
             <div class="container">
-              <div class="intro__inner">
-                <div class="intro__content">
-                  <h1 class="intro__title">Натуральный мёд</h1>
-                  <p class="intro__text">Натуральный мёд оптом напрямую с пасеки. Доставка во все регионы России, Казахстана и другие страны. Быстрая отгрузка. Низкие цены. Высокое качество. 95% наших зазкачиков становятся постоянными.</p><a class="intro__btn btn" href="#">
-                    <picture>
-                      <source srcset="static/images/common/btn-image.webp" type="image/webp"/>
-                      <source srcset="static/images/common/btn-image.png" type="image/png"/><img class="btn__image" src="static/images/common/btn-image.png" alt="btn-image"/>
-                    </picture><span class="btn__control"><span class="btn__text">Смотреть продукцию</span></span></a>
-                </div>
-                <div class="intro__image">
+              <div class="intro__content">
+                <h1 class="intro__title">Натуральный мёд</h1>
+                <p class="intro__text">Натуральный мёд оптом напрямую с пасеки. Доставка во все регионы России, Казахстана и другие страны. Быстрая отгрузка. Низкие цены. Высокое качество. 95% наших зазкачиков становятся постоянными.</p><a class="intro__btn btn" href="#">
                   <picture>
-                    <source srcset="static/images/content/intro/intro-image.webp" type="image/webp"/>
-                    <source srcset="static/images/content/intro/intro-image.png" type="image/png"/><img src="static/images/content/intro/intro-image.png" alt="intro-image"/>
-                  </picture>
+                    <source srcset="static/images/common/btn-image.webp" type="image/webp"/>
+                    <source srcset="static/images/common/btn-image.png" type="image/png"/><img class="btn__image" src="static/images/common/btn-image.png" alt="btn-image"/>
+                  </picture><span class="btn__control"><span class="btn__text">Смотреть продукцию</span></span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <svg class="icon icon-decor-left products__decor products__decor--left">
+            <use xlink:href="static/images/sprite/symbol/sprite.svg#decor-left"></use>
+          </svg>
+          <svg class="icon icon-decor-right products__decor products__decor--right">
+            <use xlink:href="static/images/sprite/symbol/sprite.svg#decor-right"></use>
+          </svg>
+          <div class="container">
+            <h2 class="title products__title">Товары дня</h2>
+            <div class="products__slider">
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-1.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-1.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-1.png" alt="product-1"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд с Имбирём</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-2.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-2.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-2.png" alt="product-2"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд Дикий Таёжный</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-3.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-3.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-3.png" alt="product-3"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд с Черникой</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-1.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-1.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-1.png" alt="product-1"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд Дикий Таёжный</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-2.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-2.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-2.png" alt="product-2"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд Дикий Таёжный</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slide">
+                <div class="product">
+                  <div class="product__head"><a class="product__link" href="#">
+                      <picture>
+                        <source srcset="static/images/content/products/product-3.webp" type="image/webp"/>
+                        <source srcset="static/images/content/products/product-3.png" type="image/png"/><img class="product__image" src="static/images/content/products/product-3.png" alt="product-3"/>
+                      </picture></a><a class="product__title title title--small title--is-decor" href="#">Мёд с Черникой</a><span class="product__desc">Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.</span></div>
+                  <div class="product__footer">
+                    <div class="product__info"><strong class="product__price price">581 ₽ / кг</strong><a class="product__basket" href="#">
+                        <svg class="icon icon-cart product__icon">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg></a></div>
+                  </div>
                 </div>
               </div>
             </div>

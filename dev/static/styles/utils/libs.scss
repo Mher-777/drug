@@ -1,2 +1,33 @@
 @import "../../../../node_modules/normalize.css/normalize";
-@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+//@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-slider {
+  position: relative;
+}
+.slick-slide {
+  &:focus, a {
+    outline: none;
+  }
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  &--left {
+    left: 0;
+  }
+  &--right {
+    right: 0;
+  }
+  .icon {
+    width: 27px;
+    height: 48px;
+    fill: #c29046;
+  }
+}

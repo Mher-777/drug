@@ -65,3 +65,50 @@
     }
   }
 }
+@media (max-width: 1300px) {
+  .menu__link {
+    font-size: 16px;
+    padding: 18px 10px;
+  }
+  .menu__link--icon .icon-cart {
+    width: 28px;
+    height: 18px;
+  }
+  .menu__link-icon {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1130px) {
+  .menu__link {
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 1000px) {
+  .logo {
+    position: relative;
+    z-index: 1;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: $color-bg;
+    left: 0;
+    border-top: 1px solid $white;
+    padding-bottom: 5px;
+    &__list {
+      display: block;
+    }
+  }
+  .menu__item {
+    border-bottom: 1px solid rgba($white, .5);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .menu__link {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}

@@ -2,7 +2,7 @@ header.header
   .header__top
     .container
       .header__top-inner
-        nav.header__menu
+        nav.header__menu(data-da="menu, 1, 650")
           ul.header__menu-list
             li.header__menu-item
               a(href="#").header__menu-link О нас
@@ -22,7 +22,7 @@ header.header
             +icon('vk', 'header__socials-icon')
           a(href="#").header__socials-link
             +icon('fb', 'header__socials-icon')
-        .header__info
+        .header__info(data-da="menu, 2, 650")
           .header__info-top
             a(href='tel:+88002274564').header__info-phone
               +icon('phone', 'header__info-icon')
@@ -56,3 +56,6 @@ header.header
                   +icon('cart')
                   span.menu__item-count 21
                 | Корзина (19320₽)
+        button(type="button").hamburger.hamburger--collapse
+          span.hamburger-box
+            span.hamburger-inner

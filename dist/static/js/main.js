@@ -31,3 +31,79 @@ window.onload = function () {
     }
   }
 };
+
+$(function () {
+  svg4everybody({});
+
+  var menu = function menu() {
+    var btn = $('.hamburger');
+    var menu = $('.menu');
+    btn.on('click', function () {
+      $(this).toggleClass('is-active');
+      menu.slideToggle();
+    });
+
+    function responsiveMenu() {
+      var w = $(window).width();
+
+      if (w >= 1000) {
+        btn.removeClass('is-active');
+        menu.removeAttr('style');
+      }
+    }
+
+    responsiveMenu();
+    $(window).resize(function (e) {
+      responsiveMenu();
+    });
+  };
+
+  menu();
+
+  var products = function products() {
+    $('.products__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      touchThreshold: 40,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      pauseOnHover: false,
+      sped: 2000,
+      prevArrow: '<button type="button" class="arrow arrow--left"><svg class="icon icon-arrow-left ">\n' + '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-left"></use>\n' + '                  </svg></button>',
+      nextArrow: '<button type="button" class="arrow arrow--right"><svg class="icon icon-arrow-right ">\n' + '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-right"></use>\n' + '                  </svg></button>',
+      responsive: [{
+        breakpoint: 1151,
+        settings: {
+          slidesToShow: 2
+        }
+      }, {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true
+        }
+      }]
+    });
+  };
+
+  products();
+});
+
+var headerSticky = function headerSticky() {
+  var scrollPrev = 0;
+  var header = document.querySelector('.header');
+  window.addEventListener('scroll', function () {
+    var scrolled = window.scrollY;
+
+    if (scrolled >= 150 && scrolled > scrollPrev) {
+      header.style.top = -header.offsetHeight - 50 + 'px';
+    } else {
+      header.classList.remove('header--sticky');
+      header.style.top = 0;
+    }
+
+    scrollPrev = scrolled;
+  });
+};
+
+headerSticky();

@@ -1,0 +1,152 @@
+.products {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background-color: #fffdf8;
+  overflow: hidden;
+  &__slider {
+    padding: 0 85px;
+    margin-top: 60px;
+    //.slick-list {
+    //  margin-left: -15px;
+    //}
+  }
+  &__slide {
+    //margin-left: 15px;
+  }
+  &__decor {
+    position: absolute;
+    width: 335px;
+    height: 730px;
+    top: 50px;
+    &--left {
+      left: -210px;
+    }
+    &--right {
+      right: -220px;
+      top: -70px;
+    }
+  }
+}
+.price {
+  font-size: 24px;
+  font-family: $font-gilroy;
+  white-space: nowrap;
+  line-height: 24px;
+  display: block;
+}
+.product {
+  text-align: center;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all linear .2s;
+  margin: 10px 17px;
+  height: 100%;
+  &:hover {
+    background-color: #fffefc;
+    box-shadow: 0 0 46px rgba(0, 0, 0, 0.05);
+  }
+  &__link {
+    display: block;
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__image {
+    max-width: 238px;
+    width: 100%;
+    max-height: 241px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__desc {
+    display: block;
+    color: #8a8b8b;
+    font-size: 18px;
+  }
+  &__icon {
+    fill: $color-accent;
+    width: 35px;
+    height: 24px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1400px) {
+  .products__slider {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .product {
+    padding: 30px 20px;
+    margin: 10px 12px;
+  }
+  .products__slider {
+    margin-top: 40px;
+  }
+  .product__title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  .products__decor--left {
+    left: -260px;
+  }
+  .products__decor {
+    opacity: .8;
+  }
+  .product__desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .product {
+    padding: 20px 10px;
+  }
+  .products__slider {
+    padding: 0 35px;
+    margin: 0 -10px;
+  }
+  .product__image {
+    max-width: 200px;
+  }
+  .arrow .icon {
+    width: 27px;
+    height: 40px;
+  }
+
+}
+@media (max-width: 700px) {
+  .price {
+    font-size: 20px;
+  }
+  .product__icon {
+    width: 30px;
+    height: 21px;
+  }
+  .product__desc {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .products {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 400px) {
+  .product__image {
+    max-width: 180px;
+  }
+  .arrow .icon {
+    width: 22px;
+    height: 43px;
+  }
+}
