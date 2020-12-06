@@ -1,0 +1,89 @@
+
+<!--+picture('static/images/content/slider', 'main-image', ['webp', 'png', 'svg'], 'slider__pic')--><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Сотрудничество</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Доставка и оплата</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <form class="search__from" action="/">
+                  <input class="search__input" type="text" placeholder="Что вы ищете?" required>
+                  <button class="search__btn" type="submit">
+                    <svg class="icon icon-search search__icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="header__socials"><a class="header__socials-link" href="#">
+                  <svg class="icon icon-vk header__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="header__socials-link" href="#">
+                  <svg class="icon icon-fb header__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#fb"></use>
+                  </svg></a></div>
+              <div class="header__info">
+                <div class="header__info-top"><a class="header__info-phone" href="tel:+88002274564">
+                    <svg class="icon icon-phone header__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
+                    </svg>+8 (800) 227-45-64</a><a class="header__info-phone" href="tel:+79563326444">
+                    <svg class="icon icon-whatsapp header__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#whatsapp"></use>
+                    </svg>+7 (956) 332-64-44</a></div>
+                <div class="header__info-bottom"><a class="header__info-link" href="#">Заказать обратный звонок</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__inner">
+              <div class="logo logo--margin"><a class="logo__link" href="#">
+                  <picture>
+                    <source srcset="static/images/common/logo.webp" type="image/webp"/>
+                    <source srcset="static/images/common/logo.png" type="image/png"/><img class="logo__image" src="static/images/common/logo.png" alt="logo"/>
+                  </picture></a></div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">Мед</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Продукты пчеловодства</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Товары для пчеловодов</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Подарки из меда</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link--icon" href="#">
+                      <div class="menu__item-icon">
+                        <svg class="icon icon-cart ">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg><span class="menu__item-count">21</span>
+                      </div>Корзина (19320₽)</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+      </div>
+    </div>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

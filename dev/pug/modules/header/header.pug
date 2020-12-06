@@ -1,0 +1,58 @@
+header.header
+  .header__top
+    .container
+      .header__top-inner
+        nav.header__menu
+          ul.header__menu-list
+            li.header__menu-item
+              a(href="#").header__menu-link О нас
+            li.header__menu-item
+              a(href="#").header__menu-link Сотрудничество
+            li.header__menu-item
+              a(href="#").header__menu-link Доставка и оплата
+            li.header__menu-item
+              a(href="#").header__menu-link Контакты
+        .search
+          form(action="/").search__from
+            input(type="text" placeholder="Что вы ищете?" required).search__input
+            button(type="submit").search__btn
+              +icon('search', 'search__icon')
+        .header__socials
+          a(href="#").header__socials-link
+            +icon('vk', 'header__socials-icon')
+          a(href="#").header__socials-link
+            +icon('fb', 'header__socials-icon')
+        .header__info
+          .header__info-top
+            a(href='tel:+88002274564').header__info-phone
+              +icon('phone', 'header__info-icon')
+              | +8 (800) 227-45-64
+            a(href='tel:+79563326444').header__info-phone
+              +icon('whatsapp', 'header__info-icon')
+              | +7 (956) 332-64-44
+          .header__info-bottom
+            a(href="#").header__info-link Заказать обратный звонок
+  .header__bottom
+    .container
+      .header__inner
+        .logo.logo--margin
+          a(href="#").logo__link
+            +picture('static/images/common', 'logo', ['webp', 'png'], 'logo__image')
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a(href="#").menu__link Мед
+            li.menu__item
+              a(href="#").menu__link Продукты пчеловодства
+            li.menu__item
+              a(href="#").menu__link Товары для пчеловодов
+            li.menu__item
+              a(href="#").menu__link Подарки из меда
+            li.menu__item
+              a(href="#").menu__link Акции
+            li.menu__item
+              a(href="#").menu__link.menu__link--icon
+                .menu__item-icon
+                  +icon('cart')
+                  span.menu__item-count 21
+                | Корзина (19320₽)

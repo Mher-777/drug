@@ -1,0 +1,120 @@
+header { flex: 0 0 auto; }
+.logo {
+   &--margin {
+     margin: -70px -25px -95px 0;
+   }
+  &__image {
+
+  }
+  &__link {
+    display: block;
+  }
+}
+.header {
+  &__top {
+    font-family: $font-gilroy;
+    background-color: #fefaf4;
+    font-weight: 500;
+    &-inner {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      max-width: 1230px;
+      width: 100%;
+      margin-left: auto;
+      justify-content: space-between;
+    }
+  }
+  &__menu {
+    margin-right: 95px;
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      margin-left: 45px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &-link {
+      transition: all linear .2s;
+      font-weight: 500;
+      font-size: 14px;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    &-link {
+      margin: 0 11.5px;
+    }
+    &-icon {
+      &.icon-fb {
+        width: 8px;
+        height: 15px;
+      }
+      &.icon-vk {
+        width: 17px;
+        height: 11px;
+      }
+      &:hover {
+        fill: $color-accent;
+      }
+    }
+  }
+  &__info {
+    line-height: 1;
+    margin-left: 25px;
+    font-size: 14px;
+    &-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      white-space: nowrap;
+      transition: all linear .2s;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $color-accent;
+        .header__info-icon {
+          fill: $color-accent;
+        }
+      }
+    }
+    &-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    &-bottom {
+      text-align: right;
+    }
+    &-link {
+      text-transform: uppercase;
+      font-size: 12px;
+      text-align: left;
+      text-decoration: underline;
+      color: $color-accent-light;
+    }
+  }
+  &__bottom {
+    background-color: $color-bg;
+    color: $white;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

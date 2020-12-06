@@ -1,0 +1,33 @@
+.search {
+  max-width: 190px;
+  width: 100%;
+  position: relative;
+  margin-right: 38px;
+  &__from {
+    position: relative;
+  }
+  &__input {
+    background-color: $white;
+    padding: 8px 15px;
+    border: none;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    font-family: $font-gilroy;
+    border-radius: 15px;
+    &::placeholder {
+      font-size: 12px;
+      color: #c8c6c6;
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+  }
+  &__icon {
+    width: 14px;
+    height: 14px;
+    fill: #c8c6c6;
+  }
+}
