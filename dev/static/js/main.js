@@ -82,6 +82,37 @@ $(function () {
         })
     }
     products()
+    const counter = () => {
+        const counterPlus = (el, val) => {
+            el.val(+val + 1);
+        };
+
+        const counterMinus = (el, val) => {
+            if (val - 1) {
+                el.val(+val - 1);
+            }
+        };
+        $('.counter__btn').each(function () {
+
+            let btn = $(this)
+            btn.on('click', function (e) {
+                e.preventDefault()
+                if ($(this).attr('data-direction') === 'plus') {
+                    counterPlus(btn.prev(), btn.prev().val())
+                } else {
+                    counterMinus(btn.next(), btn.next().val())
+                }
+            })
+        })
+    }
+    counter()
+    $('select').customSelectBox({
+        selectboxClass: "select",
+        buttonClass: "current",
+        arrow: '<svg class="icon icon-arrow-down ">\n' +
+            '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>\n' +
+            '                  </svg>'
+    })
 })
 const headerSticky = () => {
     let scrollPrev = 0;

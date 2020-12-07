@@ -1,0 +1,116 @@
+select {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.counter {
+  position: relative;
+  font-size: 17px;
+}
+.select .current,
+.counter{
+  width: 80px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: transparent;
+  z-index: 1;
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 11.5px;
+    z-index: -1;
+    border: 1px solid $color-accent;
+  }
+  &::before {
+    content: '';
+    border-bottom: none;
+    -webkit-transform: perspective(10px) rotateX(5deg);
+    -moz-transform: perspective(10px) rotateX(5deg);
+    transform: perspective(10px) rotateX(5deg);
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    top: 12.5px;
+    content: '';
+    border-top: none;
+    -webkit-transform: perspective(10px) rotateX(-5deg);
+    -moz-transform: perspective(10px) rotateX(-5deg);
+    transform: perspective(10px) rotateX(-5deg);
+  }
+  &__input {
+    width: 45px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+  }
+}
+.select {
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 14px;
+  display: inline-block;
+  .items {
+    position: absolute;
+    top: calc(100% - 1px);
+    background-color: $white;
+    width: calc(100% + 3.3px);
+    left: -1.79px;
+    z-index: -1;
+    text-align: center;
+    li {
+      margin-top: 3px;
+    }
+  }
+  .selected {
+    color: $color-accent;
+  }
+  .focused {
+    .arrow {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+    &::after {
+      border: none;
+      height: 13.5px;
+    }
+    & ~ .items {
+      border-right: 1px solid $color-accent;
+      border-left: 1px solid $color-accent;
+      top: calc(100% - 15px);
+      padding-top: 15px;
+      &::after {
+        content: '';
+        width: calc(99% - 1px);
+        left: 1px;
+        height: 11.5px;
+        z-index: -1;
+        border: 1px solid #b87e28;
+        position: absolute;
+        top: 100%;
+        border-top: none;
+        -webkit-transform: perspective(10px) rotateX(-5deg);
+        transform: perspective(10px) rotateX(-5deg);
+        background-color: #fff;
+      }
+    }
+  }
+  .arrow {
+    position: static;
+    transform: none;
+    .icon {
+      width: 8px;
+      height: 5px;
+      margin-left: 5px;
+    }
+  }
+}

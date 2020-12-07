@@ -8,6 +8,7 @@ const vendorsScripts = [
   'node_modules/svg4everybody/dist/svg4everybody.min.js',
   'dev/static/js/vendor/responsive.js',
   'dev/static/js/vendor/jquery-3.3.1.min.js',
+  'dev/static/js/vendor/custom-select.js',
   'node_modules/slick-carousel/slick/slick.min.js',
 ];
 
