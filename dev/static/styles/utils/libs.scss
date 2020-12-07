@@ -2,7 +2,6 @@
 //@import "../../../../node_modules/slick-carousel/slick/slick.scss";
 .slick-track {
   display: flex;
-  align-items: flex-start;
 }
 .slick-list {
   overflow: hidden;
@@ -36,5 +35,10 @@
       width: 59px;
       height: 51px;
     }
+  }
+}
+.documents__slider {
+  .slick-track {
+    align-items: flex-start;
   }
 }

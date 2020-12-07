@@ -136,6 +136,39 @@ $(function () {
         })
     }
     documents()
+    const review = () => {
+        $('.reviews__slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            touchThreshold: 40,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            sped: 2000,
+            prevArrow: '<button type="button" class="arrow arrow--left"><svg class="icon icon-arrow-left ">\n' +
+                '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-left"></use>\n' +
+                '                  </svg></button>',
+            nextArrow: '<button type="button" class="arrow arrow--right"><svg class="icon icon-arrow-right ">\n' +
+                '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-right"></use>\n' +
+                '                  </svg></button>',
+
+            responsive: [
+                {
+                    breakpoint: 1151,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 601,
+                    settings: {
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                    }
+                }
+            ]
+        })
+    }
+    review()
 })
 const headerSticky = () => {
     let scrollPrev = 0;
