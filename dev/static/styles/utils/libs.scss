@@ -2,6 +2,7 @@
 //@import "../../../../node_modules/slick-carousel/slick/slick.scss";
 .slick-track {
   display: flex;
+  align-items: flex-start;
 }
 .slick-list {
   overflow: hidden;
@@ -29,5 +30,11 @@
     width: 27px;
     height: 48px;
     fill: #c29046;
+  }
+  &--hexagon {
+    svg.icon {
+      width: 59px;
+      height: 51px;
+    }
   }
 }

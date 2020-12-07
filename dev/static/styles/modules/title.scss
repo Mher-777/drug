@@ -25,6 +25,9 @@
   &::after {
     margin-left: 20px;
   }
+  &--left {
+    justify-content: flex-start;
+  }
   &.title {
     &--small {
       font-size: 24px;

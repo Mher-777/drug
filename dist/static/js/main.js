@@ -119,6 +119,25 @@ $(function () {
     buttonClass: "current",
     arrow: '<svg class="icon icon-arrow-down ">\n' + '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-down"></use>\n' + '                  </svg>'
   });
+
+  var documents = function documents() {
+    $('.documents__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      adaptiveHeight: true,
+      prevArrow: '<button type="button" class="arrow arrow--hexagon arrow--left"><svg class="icon icon-arrow-left ">\n' + '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-hexagon--left"></use>\n' + '                  </svg></button>',
+      nextArrow: '<button type="button" class="arrow arrow--hexagon arrow--right"><svg class="icon icon-arrow-right ">\n' + '                    <use xlink:href="static/images/sprite/symbol/sprite.svg#arrow-hexagon--right"></use>\n' + '                  </svg></button>',
+      responsive: [{
+        breakpoint: 871,
+        settings: {
+          appendArrows: '.documents__arrows'
+        }
+      }]
+    });
+  };
+
+  documents();
 });
 
 var headerSticky = function headerSticky() {
