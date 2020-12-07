@@ -76,6 +76,7 @@ $(function () {
                     settings: {
                         slidesToShow: 1,
                         adaptiveHeight: true,
+                        autoplay: false,
                     }
                 }
             ]
@@ -163,6 +164,7 @@ $(function () {
                     settings: {
                         slidesToShow: 1,
                         adaptiveHeight: true,
+                        autoplay: false
                     }
                 }
             ]

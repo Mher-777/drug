@@ -1,0 +1,44 @@
+footer.footer
+  .footer__bg(data-bg="static/images/content/footer/footer-bg.jpg" data-bg-webp="static/images/content/footer/footer-bg.webp")
+    .container
+      .footer__inner
+        .footer__menu
+          ul.footer__menu-list.footer__menu-list--bold
+            li.footer__menu-item
+              a(href="#").footer__menu-link Мед
+            li.footer__menu-item
+              a(href="#").footer__menu-link Продукты пчеловодства
+            li.footer__menu-item
+              a(href="#").footer__menu-link Товары для пчеловодов
+            li.footer__menu-item
+              a(href="#").footer__menu-link Подарки из меда
+            li.footer__menu-item
+              a(href="#").footer__menu-link Акции
+          ul.footer__menu-list
+            li.footer__menu-item
+              a(href="#").footer__menu-link О нас
+            li.footer__menu-item
+              a(href="#").footer__menu-link Сотрудничество
+            li.footer__menu-item
+              a(href="#").footer__menu-link Доставка и оплата
+            li.footer__menu-item
+              a(href="#").footer__menu-link Контакты
+        .footer__socials
+          a(href="tel:+88002274564").footer__socials-link
+            +icon('phone-hexagon', 'footer__socials-icon')
+            span.footer__socials-text +8 (800) 227-45-64
+          a(href="tel:+79563326444").footer__socials-link
+            +icon('whatsapp-hexagon', 'footer__socials-icon')
+            span.footer__socials-text +7 (956) 332-64-44
+          a(href="#").footer__socials-link
+            +icon('marker-hexagon', 'footer__socials-icon')
+            span.footer__socials-text Россия, Калужская обл., пос. Егорьево
+          a(href="mailto:info@egomed.ru").footer__socials-link
+            +icon('mail-hexagon', 'footer__socials-icon')
+            span.footer__socials-text info@egomed.ru
+        .footer__logo
+          .logo
+            a(href="#").logo__link
+              +picture('static/images/common', 'logo', ['webp', 'png'], 'logo__image')
+  .footer__copyright
+    a(href="#").footer__copyright-link Пользовательское соглашение
