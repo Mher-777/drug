@@ -1,6 +1,9 @@
 .aside {
   max-width: 340px;
   width: 100%;
+  &.page-aside {
+    max-width: 340px;
+  }
   & > * {
     background-color: #fffbf2;
     margin-bottom: 25px;
@@ -77,3 +80,4 @@
     }
   }
 }
+

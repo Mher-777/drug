@@ -1,0 +1,93 @@
+extends layout/main
+
+block variables
+    -var title = 'Тестовая старница'
+
+block content
+  section.page
+    +icon('decor-left', 'page__decor page__decor--left')
+    +icon('decor-right', 'page__decor page__decor--right')
+    .container
+      .top.top--padding
+        ul.breadcrumbs.breadcrumbs--margin
+          +breadcrumbs-item('Главная','#')
+          +breadcrumbs-item('Пример страницы','#')
+        h2.top__title.title Пример страницы
+      .page__inner
+        aside.aside
+          nav.aside__menu
+            h3.aside__title Разделы
+            ul.aside__menu-lst
+              li.aside__menu-item.js-dropdown
+                a(href="#").aside__menu-link Мёд
+              ul.aside__menu-dropdown
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Медовые композиции
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Натуральный мёд
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Мёд натуральный жидкий
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Мёд натуральный кристаллизованный
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Крем мёд
+              li.aside__menu-item
+                a(href="#").aside__menu-link Продукты здоровья
+              li.aside__menu-item.js-dropdown
+                a(href="#").aside__menu-link Животные жиры
+              ul.aside__menu-dropdown
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Медовые композиции
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Натуральный мёд
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Мёд натуральный жидкий
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Мёд натуральный кристаллизованный
+                li.aside__menu-dropdown-item
+                  a(href="#").aside__menu-dropdown-link Крем мёд
+        .page__content
+          h1 Заголовок статьи первого уровня
+          h2 Заголовок статьи второго уровня
+          h3 Заголовок статьи третьего уровня
+          h4 Заголовок статьи четвертого уровня
+          h5 Заголовок статьи пятого уровня
+          h6 Заголовок статьи шестого уровня
+          br
+          p Опытные пчеловоды отличают разные виды меда по вкусу и аромату, консистенции, цвету и многим другим признакам.  В первую очередь, пасечники выделяют виды меда не по сортам, как, например, липовый или гречишный, а по происхождению.
+          blockquote Доходность пчеловодства. Немного найдётся таких отраслей хозяйства, которые могли бы так скоро обеспечить возврат затраченного капитала, как пчеловодство. <span>Михайлова А. Р. - Главный пчеловод</span>
+          ul
+            li Цветочный – это тот самый натуральный мед, который получается из нектара медоносных растений, который собирают пчелы в период цветения. Он может быть монофлорным, из нектара всего одного растения, и полифлорным – из нектара нескольких видов.
+            li Падевый – в этом случае пчелы запасают не нектар, а “падь” – сок растений, переработанный другими насекомыми, например, тлей или червецами. Кроме того, падевый мед получается из “медвяной росы” – сока, который выступает на листьях, хвое или побегах.
+          img(src="static/images/content/page/page-image-1.jpg" alt="" style="float: right;")
+          p Домашний мед – это продукт титанического труда пчелиных семей, сегодня только на магазин меда в Москве предлагает по настоящему вкусный домашний мед. Ведь чтобы собрать всего полкилограмма нектара, необходимо пролететь порядка 250 тыс. км. и обследовать несколько миллионов цветов. Интересно, что нектар начинает свое превращение в мед еще в полете: пчелы хранят собранную пыльцу в особом органе, “медовом желудочке”, где он подвергается ферментированию и теряет влагу.
+          p Однако это лишь первый шаг к тому, чтобы получить домашний мед. Прилетая в улей, рабочие пчелы отдают нектар “приемщицам”, которые завершают процесс переработки и откладывают его в восковые ячейки. Но их не запечатывают до тех пор, пока его влажность не снизится до 18%. Для этого пчелы переносят мед из одной ячейки в другую, и, как только мед полностью созреет, ячейка запечатывается воском.
+          div(data-bg="static/images/content/page/page-image-2.jpg" data-bg-webp="static/images/content/page/page-image-2.webp")
+          table
+            thead
+              tr
+                td Литры
+                td Цена / л.
+                td Вид
+                td Покупок
+            tbody
+              tr
+                td(data-label="Литры") 26
+                td(data-label="Цена / л.") 360
+                td(data-label="Вид") Липовый мед натуральный
+                td(data-label="Покупок") 6
+              tr
+                td(data-label="Литры") 0.5
+                td(data-label="Цена / л.") 245
+                td(data-label="Вид") Мед с имбирем
+                td(data-label="Покупок") 12
+              tr
+                td(data-label="Литры") 12
+                td(data-label="Цена / л.") 549
+                td(data-label="Вид") Мед с лимоном
+                td(data-label="Покупок") 43
+              tr
+                td(data-label="Литры") 57
+                td(data-label="Цена / л.") 388
+                td(data-label="Вид") Цветочный мед жидкий
+                td(data-label="Покупок") 1
