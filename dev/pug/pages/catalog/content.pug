@@ -1,0 +1,239 @@
+.catalogs__content
+  .catalogs__top
+    .catalogs__sort
+      span.catalogs__sort-text Сортировать по
+      select
+        option(value="1") Цена по возрастанию
+        option(value="2") Цена по убыванию
+        option(value="3") Новейшие поступления
+        option(value="4") Рекомендуемые
+    .catalogs__control
+      button(type="button" data-control="list").catalogs__top-btn.js-btn
+        +icon('list', 'catalogs__top-icon')
+      button(type="button" data-control="grid").catalogs__top-btn.js-btn.active
+        +icon('grid', 'catalogs__top-icon')
+  .catalogs__row.catalogs__row--margin.grid
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от светло-золотого до тёмно-коричневого. Характеризуется приятным вкусом и ароматом.
+      .catalog__footer
+        .condition.catalog__condition
+          span.condition__new новинка
+          span.condition__popular хит
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-3', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-3', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от светло-золотого до тёмно-коричневого. Характеризуется приятным вкусом и ароматом.
+      .catalog__footer
+        .condition.catalog__condition
+          span.condition__new новинка
+          span.condition__popular хит
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+    .catalog.catalog--small.grid
+      .catalog__head
+        a(href="#").catalog__link
+          +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'catalog__image')
+        .catalog__head-box
+          a(href="#").title.title--small.title--is-decor.catalog__title Мёд Дикий Таёжный
+          span.catalog__desc По цвету натуральный акациевый мёд с черноклёном бывает от
+      .catalog__footer
+        .catalog__controls
+          .catalog__control
+            span.catalog__control-text Вес
+            select
+              option(value="1") 250 гр
+              option(value="2") 500 гр
+              option(value="3") 1 кг
+          .catalog__control
+            span.catalog__control-text Количество
+            .counter.catalog__counter
+              button.counter__btn(data-direction="minus") -
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus") +
+        .catalog__info
+          strong.price.price--small.catalog__price 28817 ₽
+          a(href="#").catalog__btn.btn.btn--small
+            span.btn__control
+              span.btn__text Добавить в корзину
+  .pagination
+    a(href="#").pagination__link.pagination__link--current 1
+    a(href="#").pagination__link 2
+    a(href="#").pagination__link 3
+    a(href="#").pagination__link 4
+    .pagination__arrows
+      a(href="#").pagination__arrows-link
+        +icon('arrow-left', 'pagination__icon')
+      a(href="#").pagination__arrows-link
+        +icon('arrow-right', 'pagination__icon')

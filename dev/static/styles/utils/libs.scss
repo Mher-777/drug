@@ -1,4 +1,5 @@
 @import "../../../../node_modules/normalize.css/normalize";
+@import "../../../../node_modules/ion-rangeslider/css/ion.rangeSlider";
 //@import "../../../../node_modules/slick-carousel/slick/slick.scss";
 .slick-track {
   display: flex;
@@ -41,4 +42,34 @@
   .slick-track {
     align-items: flex-start;
   }
+}
+.irs--square .irs-line {
+  background-color: #e8dec7;
+}
+.irs--square .irs-from, .irs--square .irs-to, .irs--square .irs-single {
+  background-color: transparent;
+  color: #27282a;
+  font-family: 'PF Agora Slab Pro', Arial, serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.irs--square .irs-bar {
+  background-color: #b87e28;
+}
+.irs--square .irs-handle {
+  width: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65' height='65' viewBox='0 0 65 65'%3E%3Cdefs%3E%3Cmask id='vkeob' width='2' height='2' x='-1' y='-1'%3E%3Cpath fill='%23fff' d='M22 22h21v19H22z'/%3E%3Cpath d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z'/%3E%3C/mask%3E%3Cfilter id='vkeoa' width='111' height='109' x='-23' y='-23' filterUnits='userSpaceOnUse'%3E%3CfeOffset in='SourceGraphic' result='FeOffset1023Out'/%3E%3CfeGaussianBlur in='FeOffset1023Out' result='FeGaussianBlur1024Out' stdDeviation='14 14'/%3E%3C/filter%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cg filter='url(%23vkeoa)'%3E%3Cpath fill='none' d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z' mask='url(&quot;%23vkeob&quot;)'/%3E%3Cpath fill='%23e4a807' fill-opacity='.27' d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z'/%3E%3C/g%3E%3Cg filter='url(%23vkeoa)'%3E%3Cpath fill='none' d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z' mask='url(&quot;%23vkeob&quot;)'/%3E%3Cpath fill='%23e4a807' fill-opacity='.27' d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z'/%3E%3C/g%3E%3Cpath fill='%23b87e28' d='M42.995 31.841l-5.2 9.166h-10.4l-5.2-9.166 5.2-9.166h10.4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  background-size: 60px 60px;
+  transform: none;
+  background-position: center;
+  cursor: grab;
+}
+.irs--square .irs-handle.state_hover, .irs--square .irs-handle:hover {
+  background-color: transparent;
 }

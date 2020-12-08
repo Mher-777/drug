@@ -171,6 +171,41 @@ $(function () {
         })
     }
     review()
+    const accordionMenu = () => {
+        $('.js-dropdown').on('click', function (e) {
+            e.preventDefault()
+            $(this).toggleClass('active').next().slideToggle()
+        })
+    }
+    accordionMenu()
+    const controlCatalog = () => {
+        const btn = $('.js-btn')
+        btn.on('click', function (e) {
+            e.preventDefault()
+            const $this = $(this)
+            const data = $this.attr('data-control')
+            const content = $('.catalogs__row')
+            if(data === 'list') {
+                content.removeClass('grid')
+                content.addClass('list')
+                content.find('.catalog').removeClass('grid')
+                content.find('.catalog').addClass('list')
+                btn.removeClass('active')
+                $this.addClass('active')
+            } else {
+                content.removeClass('list')
+                content.addClass('grid')
+                content.find('.catalog').removeClass('list')
+                content.find('.catalog').addClass('grid')
+                btn.removeClass('active')
+                $this.addClass('active')
+            }
+        })
+    }
+    controlCatalog()
+    $('.js-input-slider').ionRangeSlider({
+        skin: "square"
+    });
 })
 const headerSticky = () => {
     let scrollPrev = 0;

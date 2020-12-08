@@ -1,0 +1,36 @@
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &__icon {
+    width: 8px;
+    height: 14px;
+    fill: $color-accent;
+  }
+  &__arrows {
+    margin-left: 10px;
+    &-link {
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    color: #8a8a8a;
+    margin: 0 7.5px;
+    &--current {
+      pointer-events: none;
+      color: #27282a;
+      font-weight: 700;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .pagination {
+    justify-content: center;
+  }
+}

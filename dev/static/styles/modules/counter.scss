@@ -10,7 +10,7 @@ select {
 }
 .select .current,
 .counter{
-  width: 80px;
+  min-width: 80px;
   height: 25px;
   display: inline-flex;
   align-items: center;
@@ -58,6 +58,9 @@ select {
   z-index: 10;
   font-size: 14px;
   display: inline-block;
+  .current {
+    padding: 0 10px;
+  }
   .items {
     position: absolute;
     top: calc(100% - 1px);
@@ -66,8 +69,12 @@ select {
     left: -1.79px;
     z-index: -1;
     text-align: center;
+    padding: 0 10px;
     li {
       margin-top: 3px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .selected {

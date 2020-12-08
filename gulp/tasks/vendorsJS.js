@@ -10,6 +10,7 @@ const vendorsScripts = [
   'dev/static/js/vendor/jquery-3.3.1.min.js',
   'dev/static/js/vendor/custom-select.js',
   'node_modules/slick-carousel/slick/slick.min.js',
+  'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
 ];
 
 module.exports = function vendors(cb) {

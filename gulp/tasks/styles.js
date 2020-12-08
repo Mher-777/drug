@@ -6,6 +6,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
+const media = require('gulp-group-css-media-queries')
 // Работаем со стилями
 
 module.exports = function styles() {
@@ -17,6 +18,7 @@ module.exports = function styles() {
       overrideBrowserslist:  [ "last 4 version" ],
       cascade: false
     }))
+    .pipe(gulpif(argv.prod, media()))
     .pipe(gulpif(argv.prod, cleanCSS({
       debug: true,
       compatibility: '*'

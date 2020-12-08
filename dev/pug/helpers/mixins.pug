@@ -9,4 +9,10 @@ mixin picture(path, name, type, id)
 			source(srcset=path + "/" + name + "." + val type="image/" + val)
 		img(src=path + "/" + name + "." + type[1] alt=name class=id)
 
+mixin breadcrumbs-item(text,href)
+	li.breadcrumbs__item
+		if(href)
+			a.breadcrumbs__link(href=href)=text
+		else
+			span.breadcrumbs__text=text
 //+picture('static/images/content/slider', 'main-image', ['webp', 'png', 'svg'], 'slider__pic')

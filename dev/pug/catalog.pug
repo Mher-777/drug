@@ -1,0 +1,14 @@
+extends layout/main
+
+block variables
+    -var title = 'Каталог'
+
+block content
+  section.catalogs.catalogs--page
+    +icon('decor-left', 'catalogs__decor catalogs__decor--left')
+    +icon('decor-right', 'catalogs__decor catalogs__decor--right')
+    .container
+        include pages/catalog/catalog-head
+        .catalogs__inner
+            include pages/catalog/aside
+            include pages/catalog/content
