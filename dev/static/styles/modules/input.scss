@@ -1,3 +1,131 @@
-.input {
-
+.checkbox {
+  cursor: pointer;
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  user-select: none;
+  input {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    &:checked {
+      & ~ .checkbox__custom {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__custom {
+    left: 0;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    background-image: url(../images/common/hexagon-border.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 16px;
+    background-position:  center;
+    &:after {
+      content: '';
+      background-image: url(../images/common/hexagon.svg);
+      background-repeat: no-repeat;
+      background-size: 9px 8px;
+      background-position:  center;
+      width: 9px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: all linear .2s;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #b4b4b4;
+    a {
+      display: inline;
+      &:hover {
+        color: $color-accent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.group {
+  display: block;
+  position: relative;
+  &-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #b4b4b4;
+    padding: 20px 0 5px;
+    width: 100%;
+    transition: all linear .2s;
+    &:required {
+      & ~ .group-placeholder {
+        &::after {
+          transition: all linear .2s;
+          content: '*';
+          color: $color-accent;
+          margin-left: 2px;
+          display: inline-block;
+        }
+      }
+    }
+    &--no-empty {
+      & ~ .group-placeholder {
+        top: 0;
+        transform: none;
+        font-size: 14px;
+        &::after {
+          color: #ff737a;
+        }
+      }
+    }
+    &:focus {
+      border-color: $color-accent;
+      & ~ .group-placeholder {
+        top: 0;
+        transform: none;
+        color: $color-accent;
+        font-size: 14px;
+        &::after {
+          color: #ff737a;
+        }
+      }
+    }
+  }
+  &-placeholder {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #b4b4b4;
+    font-weight: 700;
+    cursor: text;
+    transition: all linear .2s;
+  }
+}
+@media (max-width: 550px) {
+  .group-placeholder {
+    font-size: 14px;
+  }
+  .checkbox {
+    &__text {
+      a {
+        color: $color-accent;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .checkbox {
+    padding-left: 20px;
+  }
 }

@@ -1,0 +1,25 @@
+extends layout/main
+
+block variables
+    -var title = 'Корзина'
+
+block content
+  section.basket
+    +icon('decor-left', 'basket__decor basket__decor--left')
+    +icon('decor-right', 'basket__decor basket__decor--right')
+    .container
+      .top
+        h2.top__title.title Корзина
+        ul.breadcrumbs
+          +breadcrumbs-item('Главная','#')
+          +breadcrumbs-item('Корзина')
+      .basket__inner
+        .basket__content
+          include pages/basket/table
+          .basket__bottom
+            a(href="index.html" data-text="Назад к покупкам").button
+              +icon('btn-hexagon')
+            .basket__total
+              | Сумма товаров:
+              strong.basket__total-price.price 26994 ₽
+        include pages/basket/form

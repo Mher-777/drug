@@ -203,9 +203,22 @@ $(function () {
         })
     }
     controlCatalog()
-    $('.js-input-slider').ionRangeSlider({
-        skin: "square"
-    });
+    const inputCustom = () => {
+        $('.js-input-slider').ionRangeSlider({
+            skin: "square"
+        });
+
+        $('.group-input').on('input', function () {
+            console.log()
+            if($(this).val().length > 0) {
+                $(this).addClass('group-input--no-empty')
+            } else {
+                $(this).removeClass('group-input--no-empty')
+            }
+        })
+    }
+    inputCustom()
+
 })
 const headerSticky = () => {
     let scrollPrev = 0;

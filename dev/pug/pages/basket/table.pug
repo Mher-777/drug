@@ -1,0 +1,51 @@
+.basket__table
+  table.table
+    thead.table__head
+      tr.table__head-row
+        td.table__head-col
+        td.table__head-col Товар
+        td.table__head-col Количество
+        td.table__head-col Стоимость
+        td.table__head-col
+    tbody.table__body
+      tr.table__body-row
+        td.table__body-col
+          a(href="#").table__body-link
+            +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'table__body-image')
+        td.table__body-col
+          .table__body-info
+            a(href="#").table__body-title Мёд Дикий Цветочный
+            span.table__body-text Вес: 250гр.
+        td.table__body-col
+          .counter.counter--hexagon.table__body-counter
+            button.counter__btn(data-direction="minus" data-prefix="-")
+              +icon('hexagon-border')
+            input(value="25" disabled).counter__input
+            button.counter__btn(data-direction="plus" data-prefix="+")
+              +icon('hexagon-border')
+        td.table__body-col
+          strong.table__body-price.price.price--small 14890 ₽
+        td.table__body-col
+          button(type="button").table__body-delete
+            +icon('delete')
+      tr.table__body-row
+        td.table__body-col
+          a(href="#").table__body-link
+            +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'table__body-image')
+        td.table__body-col
+          .table__body-info
+            a(href="#").table__body-title Мёд Дикий Цветочный
+            span.table__body-text Вес: 250гр.
+        td.table__body-col
+          .counter.counter--hexagon.table__body-counter
+            button.counter__btn(data-direction="minus" data-prefix="-")
+              +icon('hexagon-border')
+            input(value="25" disabled).counter__input
+            button.counter__btn(data-direction="plus" data-prefix="+")
+              +icon('hexagon-border')
+        td.table__body-col
+          strong.table__body-price.price.price--small 14890 ₽
+        td.table__body-col
+          button(type="button").table__body-delete
+            +icon('delete')
+

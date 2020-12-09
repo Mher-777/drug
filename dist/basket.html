@@ -1,0 +1,268 @@
+
+<!--+picture('static/images/content/slider', 'main-image', ['webp', 'png', 'svg'], 'slider__pic')--><!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <nav class="header__menu" data-da="menu, 1, 650">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Сотрудничество</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Доставка и оплата</a></li>
+                  <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <form class="search__from" action="/">
+                  <input class="search__input" type="text" placeholder="Что вы ищете?" required>
+                  <button class="search__btn" type="submit">
+                    <svg class="icon icon-search search__icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="header__socials"><a class="header__socials-link" href="#">
+                  <svg class="icon icon-vk header__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#vk"></use>
+                  </svg></a><a class="header__socials-link" href="#">
+                  <svg class="icon icon-fb header__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#fb"></use>
+                  </svg></a></div>
+              <div class="header__info" data-da="menu, 2, 650">
+                <div class="header__info-top"><a class="header__info-phone" href="tel:+88002274564">
+                    <svg class="icon icon-phone header__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#phone"></use>
+                    </svg>+8 (800) 227-45-64</a><a class="header__info-phone" href="tel:+79563326444">
+                    <svg class="icon icon-whatsapp header__info-icon">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#whatsapp"></use>
+                    </svg>+7 (956) 332-64-44</a></div>
+                <div class="header__info-bottom"><a class="header__info-link" href="#">Заказать обратный звонок</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__inner">
+              <div class="logo logo--margin"><a class="logo__link" href="#">
+                  <picture>
+                    <source srcset="static/images/common/logo.webp" type="image/webp"/>
+                    <source srcset="static/images/common/logo.png" type="image/png"/><img class="logo__image" src="static/images/common/logo.png" alt="logo"/>
+                  </picture></a></div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">Мед</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Продукты пчеловодства</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Товары для пчеловодов</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Подарки из меда</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link--icon" href="#">
+                      <div class="menu__item-icon">
+                        <svg class="icon icon-cart ">
+                          <use xlink:href="static/images/sprite/symbol/sprite.svg#cart"></use>
+                        </svg><span class="menu__item-count">21</span>
+                      </div>Корзина (19320₽)</a></li>
+                </ul>
+              </nav>
+              <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="basket">
+          <svg class="icon icon-decor-left basket__decor basket__decor--left">
+            <use xlink:href="static/images/sprite/symbol/sprite.svg#decor-left"></use>
+          </svg>
+          <svg class="icon icon-decor-right basket__decor basket__decor--right">
+            <use xlink:href="static/images/sprite/symbol/sprite.svg#decor-right"></use>
+          </svg>
+          <div class="container">
+            <div class="top">
+              <h2 class="top__title title">Корзина</h2>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__text">Корзина</span>
+                </li>
+              </ul>
+            </div>
+            <div class="basket__inner">
+              <div class="basket__content">
+                <div class="basket__table">
+                  <table class="table">
+                    <thead class="table__head">
+                      <tr class="table__head-row">
+                        <td class="table__head-col"></td>
+                        <td class="table__head-col">Товар</td>
+                        <td class="table__head-col">Количество</td>
+                        <td class="table__head-col">Стоимость</td>
+                        <td class="table__head-col"></td>
+                      </tr>
+                    </thead>
+                    <tbody class="table__body">
+                      <tr class="table__body-row">
+                        <td class="table__body-col"><a class="table__body-link" href="#">
+                            <picture>
+                              <source srcset="static/images/content/products/product-1.webp" type="image/webp"/>
+                              <source srcset="static/images/content/products/product-1.png" type="image/png"/><img class="table__body-image" src="static/images/content/products/product-1.png" alt="product-1"/>
+                            </picture></a></td>
+                        <td class="table__body-col">
+                          <div class="table__body-info"><a class="table__body-title" href="#">Мёд Дикий Цветочный</a><span class="table__body-text">Вес: 250гр.</span></div>
+                        </td>
+                        <td class="table__body-col">
+                          <div class="counter counter--hexagon table__body-counter">
+                            <button class="counter__btn" data-direction="minus" data-prefix="-">
+                              <svg class="icon icon-hexagon-border ">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#hexagon-border"></use>
+                              </svg>
+                            </button>
+                            <input class="counter__input" value="25" disabled>
+                            <button class="counter__btn" data-direction="plus" data-prefix="+">
+                              <svg class="icon icon-hexagon-border ">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#hexagon-border"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                        <td class="table__body-col"><strong class="table__body-price price price--small">14890 ₽</strong></td>
+                        <td class="table__body-col">
+                          <button class="table__body-delete" type="button">
+                            <svg class="icon icon-delete ">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#delete"></use>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr class="table__body-row">
+                        <td class="table__body-col"><a class="table__body-link" href="#">
+                            <picture>
+                              <source srcset="static/images/content/products/product-1.webp" type="image/webp"/>
+                              <source srcset="static/images/content/products/product-1.png" type="image/png"/><img class="table__body-image" src="static/images/content/products/product-1.png" alt="product-1"/>
+                            </picture></a></td>
+                        <td class="table__body-col">
+                          <div class="table__body-info"><a class="table__body-title" href="#">Мёд Дикий Цветочный</a><span class="table__body-text">Вес: 250гр.</span></div>
+                        </td>
+                        <td class="table__body-col">
+                          <div class="counter counter--hexagon table__body-counter">
+                            <button class="counter__btn" data-direction="minus" data-prefix="-">
+                              <svg class="icon icon-hexagon-border ">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#hexagon-border"></use>
+                              </svg>
+                            </button>
+                            <input class="counter__input" value="25" disabled>
+                            <button class="counter__btn" data-direction="plus" data-prefix="+">
+                              <svg class="icon icon-hexagon-border ">
+                                <use xlink:href="static/images/sprite/symbol/sprite.svg#hexagon-border"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                        <td class="table__body-col"><strong class="table__body-price price price--small">14890 ₽</strong></td>
+                        <td class="table__body-col">
+                          <button class="table__body-delete" type="button">
+                            <svg class="icon icon-delete ">
+                              <use xlink:href="static/images/sprite/symbol/sprite.svg#delete"></use>
+                            </svg>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="basket__bottom"><a class="button" href="index.html" data-text="Назад к покупкам">
+                    <svg class="icon icon-btn-hexagon ">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#btn-hexagon"></use>
+                    </svg></a>
+                  <div class="basket__total">Сумма товаров:<strong class="basket__total-price price">26994 ₽</strong></div>
+                </div>
+              </div>
+              <form class="basket__form" action="#">
+                <h3 class="basket__form-title">Оформление заказа</h3><span class="basket__form-desc">Введите, пожалуйста, Ваши контактные данные и наш менеджер свяжется с вами в ближайшее время по указанному телефону, уточнит состав заказа, форму оплаты и доставки.</span>
+                <label class="group basket__form-group">
+                  <input class="group-input" type="text" required><span class="group-placeholder">Ваше имя</span>
+                </label>
+                <label class="group basket__form-group">
+                  <input class="group-input" type="tel" required><span class="group-placeholder">Телефон</span>
+                </label>
+                <label class="group basket__form-group">
+                  <input class="group-input" type="email"><span class="group-placeholder">Почта</span>
+                </label>
+                <label class="group basket__form-group">
+                  <input class="group-input" type="text"><span class="group-placeholder">Адрес</span>
+                </label><span class="basket__form-text">Подвезите, пожалуйста к 12 часам дня в к первому подъезду, код от домофона 3721.</span>
+                <button class="basket__form-btn btn" type="submit">
+                  <picture>
+                    <source srcset="static/images/common/btn-image.webp" type="image/webp"/>
+                    <source srcset="static/images/common/btn-image.png" type="image/png"/><img class="btn__image" src="static/images/common/btn-image.png" alt="btn-image"/>
+                  </picture><span class="btn__control"><span class="btn__text">Оформить заказ</span></span>
+                </button>
+                <label class="checkbox basket__form-checkbox"><span class="checkbox__text">Я согласен на обработку <a href="#">персональных данных</a></span>
+                  <input type="checkbox"><span class="checkbox__custom"></span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__bg" data-bg="static/images/content/footer/footer-bg.jpg" data-bg-webp="static/images/content/footer/footer-bg.webp">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__menu">
+                <ul class="footer__menu-list footer__menu-list--bold">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Мед</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Продукты пчеловодства</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Товары для пчеловодов</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Подарки из меда</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Акции</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">О нас</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Сотрудничество</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Доставка и оплата</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer__socials"><a class="footer__socials-link" href="tel:+88002274564">
+                  <svg class="icon icon-phone-hexagon footer__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#phone-hexagon"></use>
+                  </svg><span class="footer__socials-text">+8 (800) 227-45-64</span></a><a class="footer__socials-link" href="tel:+79563326444">
+                  <svg class="icon icon-whatsapp-hexagon footer__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#whatsapp-hexagon"></use>
+                  </svg><span class="footer__socials-text">+7 (956) 332-64-44</span></a><a class="footer__socials-link" href="#">
+                  <svg class="icon icon-marker-hexagon footer__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#marker-hexagon"></use>
+                  </svg><span class="footer__socials-text">Россия, Калужская обл., пос. Егорьево</span></a><a class="footer__socials-link" href="mailto:info@egomed.ru">
+                  <svg class="icon icon-mail-hexagon footer__socials-icon">
+                    <use xlink:href="static/images/sprite/symbol/sprite.svg#mail-hexagon"></use>
+                  </svg><span class="footer__socials-text">info@egomed.ru</span></a></div>
+              <div class="footer__logo">
+                <div class="logo"><a class="logo__link" href="#">
+                    <picture>
+                      <source srcset="static/images/common/logo.webp" type="image/webp"/>
+                      <source srcset="static/images/common/logo.png" type="image/png"/><img class="logo__image" src="static/images/common/logo.png" alt="logo"/>
+                    </picture></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright"><a class="footer__copyright-link" href="#">Пользовательское соглашение</a></div>
+      </footer>
+    </div>
+    <script src="static/js/libs.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

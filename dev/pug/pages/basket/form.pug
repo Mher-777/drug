@@ -1,0 +1,24 @@
+form(action="#").basket__form
+  h3.basket__form-title Оформление заказа
+  span.basket__form-desc Введите, пожалуйста, Ваши контактные данные и наш менеджер свяжется с вами в ближайшее время по указанному телефону, уточнит состав заказа, форму оплаты и доставки.
+  label.group.basket__form-group
+    input(type="text" required).group-input
+    span.group-placeholder Ваше имя
+  label.group.basket__form-group
+    input(type="tel" required).group-input
+    span.group-placeholder Телефон
+  label.group.basket__form-group
+    input(type="email").group-input
+    span.group-placeholder Почта
+  label.group.basket__form-group
+    input(type="text").group-input
+    span.group-placeholder Адрес
+  span.basket__form-text Подвезите, пожалуйста к 12 часам дня в к первому подъезду, код от домофона 3721.
+  button(type="submit").basket__form-btn.btn
+    +picture('static/images/common', 'btn-image', ['webp', 'png'], 'btn__image')
+    span.btn__control
+      span.btn__text Оформить заказ
+  label.checkbox.basket__form-checkbox
+    span.checkbox__text Я согласен на обработку <a href="#">персональных данных</a>
+    input(type="checkbox")
+    span.checkbox__custom

@@ -52,6 +52,47 @@ select {
     text-align: center;
   }
 }
+.counter {
+  &.counter--hexagon {
+    min-width: 100px;
+    &::before,
+    &::after {
+      display: none;
+    }
+    .counter__input {
+      font-size: 18px;
+    }
+    .counter__btn {
+      width: 26px;
+      height: 23px;
+      position: relative;
+      .icon-hexagon-border {
+        fill: transparent;
+        transition: all linear .2s;
+        width: 26px;
+        height: 23px;
+      }
+      &::before {
+        content: attr(data-prefix);
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all linear .2s;
+        font-size: 19px;
+        line-height: 19px;
+      }
+      &:hover {
+        .icon-hexagon-border {
+          fill: $color-accent;
+        }
+        &::before {
+          color: $white;
+        }
+      }
+    }
+  }
+}
 .select {
   position: relative;
   cursor: pointer;

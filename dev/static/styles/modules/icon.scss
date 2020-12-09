@@ -5,4 +5,19 @@
   &-cart {
     fill: #f5f5f5;
   }
+  &-delete {
+    fill: $color-accent;
+    width: 37px;
+    height: 32px;
+    stroke: $color-accent;
+    &:hover {
+      stroke: #ff737a;
+      fill: #ff737a;
+    }
+  }
+  &-btn-hexagon {
+    max-width: 240px;
+    width: 100%;
+    min-height: 38px;
+  }
 }

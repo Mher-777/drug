@@ -157,3 +157,23 @@ button {
     padding: 15px 15px;
   }
 }
+.button {
+  max-width: fit-content;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  color: $color-accent;
+  padding: 0 15px;
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  &--rotate {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}

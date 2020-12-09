@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238 38">
+    <defs>
+        <clipPath id="9nafa">
+            <path fill="#fff" d="M0 19l11 19 226.902-.031-11.845-18.985L237.902 0H11z"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g>
+            <path fill="none" stroke="#b87e28" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20"
+                  stroke-width="2" d="M0 19v0l11 19v0l226.902-.031v0l-11.845-18.985v0L237.902 0v0H11v0z"
+                  clip-path="url(&quot;#9nafa&quot;)"/>
+        </g>
+    </g>
+</svg>
