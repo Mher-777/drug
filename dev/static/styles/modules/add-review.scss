@@ -1,0 +1,221 @@
+.add-review {
+  padding-bottom: 80px;
+  padding-top: 50px;
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__form {
+    max-width: 524px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    .stars {
+      margin-left: 10px;
+    }
+  }
+  &__group {
+    margin-bottom: 20px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    & > * {
+      padding: 0;
+      max-width: 240px;
+      width: 100%;
+    }
+    .file-upload {
+      &__btn {
+        margin-bottom: 0;
+      }
+      .file-upload__text {
+        position: absolute;
+        z-index: 1;
+        margin-top: 5px;
+      }
+    }
+  }
+  &__content {
+    max-width: 690px;
+    width: 100%;
+  }
+}
+.comment {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #404040;
+    margin-right: 15px;
+  }
+  &__day {
+    font-size: 13px;
+    color: #b3b3b3;
+    white-space: nowrap;
+    padding-left: 20px;
+    position: relative;
+    margin-right: 30px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: #b87e28;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 22px;
+    color: #727274;
+  }
+  &__images {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    &-link {
+      margin-right: 10px;
+      position: relative;
+      &:last-child {
+        margin-right: 0;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color-accent;
+        opacity: 0.5;
+        left: 0;
+        top: 0;
+        transform: scale(0);
+        transition: all linear .2s;
+      }
+      &:hover {
+        .comment__icon {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        &::before {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear .2s;
+  }
+  &__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+    object-fit: cover;
+
+  }
+
+}
+@media (max-width: 1000px) {
+  .add-review__form {
+    max-width: 390px;
+  }
+}
+@media (max-width: 772px) {
+  .add-review__inner {
+    flex-direction: column-reverse;
+  }
+  .add-review__form {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .add-review {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .add-review__inner {
+    margin-top: 30px;
+  }
+  .add-review__subtitle {
+    margin-bottom: 15px;
+  }
+  .add-review__form {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .add-review {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 450px) {
+  .add-review {
+    padding-bottom: 0;
+  }
+  .add-review__bottom > * {
+    font-size: 14px;
+  }
+  .file-upload__btn_text {
+    font-size: 14px;
+  }
+  .comment__name {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .comment__top {
+    margin-bottom: 10px;
+  }
+  .comment__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .comment__image {
+    width: 65px;
+    height: 65px;
+  }
+  .comment__day {
+    font-size: 12px;
+    padding-left: 15px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .comment__top {
+    flex-wrap: wrap;
+    .stars {
+      min-width: 100px;
+      margin-top: 5px;
+    }
+  }
+}

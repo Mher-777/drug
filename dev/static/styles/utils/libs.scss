@@ -1,5 +1,7 @@
 @import "../../../../node_modules/normalize.css/normalize";
 @import "../../../../node_modules/ion-rangeslider/css/ion.rangeSlider";
+@import "../../../../node_modules/ion-rangeslider/css/ion.rangeSlider";
+@import "../../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 //@import "../../../../node_modules/slick-carousel/slick/slick.scss";
 .slick-track {
   display: flex;
@@ -72,4 +74,57 @@
 }
 .irs--square .irs-handle.state_hover, .irs--square .irs-handle:hover {
   background-color: transparent;
+}
+.jq-ry-container {
+  position: relative;
+  padding: 0 5px;
+  line-height: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  direction: ltr
+}
+
+.jq-ry-container[readonly=readonly] {
+  cursor: default
+}
+
+.jq-ry-container > .jq-ry-group-wrapper {
+  position: relative;
+  width: 100%
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+  position: relative;
+  line-height: 0;
+  z-index: 10;
+  white-space: nowrap
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+  display: inline-block
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-normal-group {
+  width: 100%
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+  width: 0;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden
+}
+.jq-ry-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.product-vertical__slider {
+  .slick-track {
+    display: block;
+  }
 }

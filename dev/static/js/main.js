@@ -175,6 +175,7 @@ $(function () {
         $('.js-dropdown').on('click', function (e) {
             e.preventDefault()
             $(this).toggleClass('active').next().slideToggle()
+
         })
     }
     accordionMenu()
@@ -218,7 +219,76 @@ $(function () {
         })
     }
     inputCustom()
+    const stars = () => {
+        $('.js-stars').rateYo({
+            normalFill: "transparent",
+            spacing: '3px',
+            ratedFill: "#b87e28",
+            starSvg: `
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 15 15">
+                    <g>
+                        <g>
+                            <path stroke="#b87e28" d="M13.94 5.553c0-.252-.269-.352-.47-.386l-4.205-.611L7.38.744C7.305.585 7.162.401 6.97.401c-.193 0-.335.184-.41.343L4.673 4.556.47 5.167c-.21.034-.47.134-.47.386 0 .15.11.293.21.402L3.26 8.92l-.72 4.189c-.01.058-.018.109-.018.167 0 .218.11.42.352.42a.708.708 0 0 0 .335-.101l3.762-1.977 3.761 1.977c.1.058.218.1.335.1.243 0 .344-.2.344-.419 0-.058 0-.109-.009-.167l-.72-4.189 3.04-2.965c.11-.109.218-.251.218-.402z"/>
+                        </g>
+                    </g>
+                </svg>
+            `
+        })
+    }
+    stars()
+    const sliderViewProduct = () => {
+        const vertical = $('.product-vertical__slider')
+        const horizontal = $('.product-horizontal__slider')
+        vertical.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            vertical: true,
+            arrows: false,
+            asNavFor: '.product-horizontal__slider',
 
+        });
+        horizontal.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.product-vertical__slider'
+        });
+
+    }
+    sliderViewProduct()
+    const popup = () => {
+        var dataFancybox = $('[data-fancybox]');
+        $('.js-popup').on('click', function (e) {
+            e.preventDefault()
+            const src = $(this).attr('data-src')
+            $.fancybox.open({
+                src: src,
+            })
+        })
+        dataFancybox.fancybox({
+            keyboard: true,
+            image: {
+                preload: true
+            },
+            infobar: false,
+            clickContent: function clickContent(current, event) {
+                return current.type === "image" ? "zoom" : false;
+            },
+            lang: "ru",
+        })
+        $.fancybox.defaults.animationEffect = "circular";
+        $.fancybox.defaults.animationDuration = 500;
+    }
+    popup()
+    const fileUpload = () => {
+        $(".file-upload input[type=file]").change(function () {
+            let filename = $(this).val().replace(/.*\\/, "");
+            $(this).closest('.file-upload').find('.file-upload__text').html(filename);
+        });
+    }
+    fileUpload()
 })
 const headerSticky = () => {
     let scrollPrev = 0;

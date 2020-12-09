@@ -1,0 +1,220 @@
+extends layout/main
+
+block variables
+    -var title = 'Мёд натуральный с Лимоном'
+
+block content
+  section.product-view
+    +icon('decor-left', 'product-view__decor product-view__decor--left')
+    +icon('decor-right', 'product-view__decor product-view__decor--right')
+    .container
+      .top.top--padding
+        ul.breadcrumbs.breadcrumbs--margin
+          +breadcrumbs-item('Главная','#')
+          +breadcrumbs-item('Каталог','#')
+          +breadcrumbs-item('Мед','#')
+          +breadcrumbs-item('Мед натуральный кристаллизованный')
+      .product-view__inner
+        .product-view__images
+          .product-vertical
+            .product-vertical__slider
+              .product-vertical__image(data-bg="static/images/content/products/product-1.png" data-bg-webp="static/images/content/products/product-1.webp")
+              .product-vertical__image(data-bg="static/images/content/products/product-2.png" data-bg-webp="static/images/content/products/product-2.webp")
+              .product-vertical__image(data-bg="static/images/content/products/product-2.png" data-bg-webp="static/images/content/products/product-2.webp")
+              .product-vertical__image(data-bg="static/images/content/products/product-3.png" data-bg-webp="static/images/content/products/product-3.webp")
+          .product-horizontal
+            .condition.product-view__condition
+              span.condition__popular хит
+              span.condition__new новинка
+            .product-horizontal__slider
+              a.product-horizontal__image(data-fancybox="image" href="static/images/content/products/product-1.png" data-src="static/images/content/products/product-1.png" data-bg="static/images/content/products/product-1.png" data-bg-webp="static/images/content/products/product-1.webp")
+              a.product-horizontal__image(data-fancybox="image" href="static/images/content/products/product-2.png" data-src="static/images/content/products/product-2.png" data-bg="static/images/content/products/product-2.png" data-bg-webp="static/images/content/products/product-2.webp")
+              a.product-horizontal__image(data-fancybox="image" href="static/images/content/products/product-2.png" data-src="static/images/content/products/product-2.png" data-bg="static/images/content/products/product-2.png" data-bg-webp="static/images/content/products/product-2.webp")
+              a.product-horizontal__image(data-fancybox="image" href="static/images/content/products/product-3.png" data-src="static/images/content/products/product-3.png" data-bg="static/images/content/products/product-3.png" data-bg-webp="static/images/content/products/product-3.webp")
+        .product-view__content
+          h2.product-view__title.title.title--small.title--is-decor.title--left Мёд натуральный с Лимоном
+          .product-view__review
+            .product-view__review-col
+              .stars(data-rateyo-star-width="15px" data-rateyo-rating="4" data-rateyo-read-only="true" data-rateyo-half-star="true").js-stars
+            .product-view__review-col 5 отзывов
+            .product-view__review-col
+              a(href="#") Добавить отзыв
+          .product-quantity
+            button(type="button").product-quantity__btn.active
+              span.product-quantity__number 250 гр.
+              +icon('rectangle', 'product-quantity__icon')
+            button(type="button").product-quantity__btn
+              span.product-quantity__number 500 гр.
+              +icon('rectangle', 'product-quantity__icon')
+            button(type="button").product-quantity__btn
+              span.product-quantity__number 1 кг.
+              +icon('rectangle', 'product-quantity__icon')
+            a(href="#").product-quantity__link Купить оптом
+          .product-info
+            strong.product-info__price.price 28817 ₽
+            .counter.counter--hexagon.product-info__counter
+              button.counter__btn(data-direction="minus" data-prefix="-")
+                +icon('hexagon-border')
+              input(value="25" disabled).counter__input
+              button.counter__btn(data-direction="plus" data-prefix="+")
+                +icon('hexagon-border')
+            a(href="#").product-info__btn.btn.btn--small
+              span.btn__control
+                span.btn__text Добавить в корзину
+          .product-desc
+            h3.product-desc__title.js-dropdown.active(data-plus="+" data-minus="-")
+              +icon('desc', 'product-desc__icon')
+              | Описание
+            ul.product-desc__list(style="display: block")
+              li.product-desc__item
+                span Основные свойства:
+                p Натуральный подсолнечниковый мёд бывает жёлтого или янтарного оттенка. Запах практически отсутствует. Прослеживается интересное терпкое послевкусие. Кристаллизация наступает за месяц после выкачки из улья.
+              li.product-desc__item
+                span Показания к применению:
+                p Продукт содержит большое количество витаминов, аминокислот, ферментов и гормонов. Рекомендован при простуде, тонзиллите и диабете. Позволяет снизить уровень холестерина в крови, а также улучшает работу сердца и положительно влияет на желудочно-кишечный тракт. Укрепляет иммунитет и повышает тонус организма.
+            h3.product-desc__title.js-dropdown(data-plus="+" data-minus="-")
+              +icon('delivery', 'product-desc__icon')
+              | Доставка
+            ul.product-desc__list
+              li.product-desc__item
+                span Магазин:
+                p Пункт самовывоза г. Мытищи, ул. 4-я Парковая , строение 17
+              li.product-desc__item
+                span Минимальный заказ и доставка:
+                p Москва и Московская область от 5 000P или один куботейнер меда 15 кг.
+                  | <br> Доставка по Москве и в пределах до 20 км от МКАД бесплатно.
+                  | <br> При доставке за МКАД от 20 км стоимость километра составляет 30P.
+            h3.product-desc__title.js-dropdown(data-plus="+" data-minus="-")
+              +icon('card', 'product-desc__icon')
+              | Оплата
+            ul.product-desc__list
+              li.product-desc__item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, placeat? Lorem <br> ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, placeat?
+  section.add-review
+    .container
+      h2.title.add-review__title Отзывы
+      .add-review__inner
+        .add-review__content
+          .comment
+            .comment__top
+              strong.comment__name Максим В.
+              time(datetime="2020-07-21").comment__day 21 ноября, 2020
+              .stars.js-stars(data-rateyo-star-width="15px" data-rateyo-rating="4" data-rateyo-read-only="true" data-rateyo-half-star="true")
+            .comment__text
+              p Продукт пчеловодства собран из цветков цитрусовых деревьев. Мёд относится к экзотическим сортам. Цвет коричневато-жёлтый, во вкусе может быть приятная кислинка или горчинка, аромат цитрусовый. Продукт богат витаминами, антиоксидантами, аминокислотами, фитонцидами, что делает его чрезвычайно полезным.
+          .comment
+            .comment__top
+              strong.comment__name Дмитрий А.
+              time(datetime="2020-07-21").comment__day 5 декабря, 2020
+              .stars.js-stars(data-rateyo-star-width="15px" data-rateyo-rating="5" data-rateyo-read-only="true" data-rateyo-half-star="true")
+            .comment__text
+              p Очень понравился мед, буду заказывать еще!
+            .comment__images
+              a(href="static/images/content/page/page-image-1.jpg" data-fancybox).comment__images-link
+                +picture('static/images/content/page', 'page-image-1', ['webp', 'jpg'], 'comment__image')
+                +icon('search', 'comment__icon')
+              a(href="static/images/content/page/page-image-2.jpg" data-fancybox).comment__images-link
+                +picture('static/images/content/page', 'page-image-2', ['webp', 'jpg'], 'comment__image')
+                +icon('search', 'comment__icon')
+        form(action="#").add-review__form
+          h3.add-review__subtitle Оставить свой отзыв:
+          .add-review__control
+            | Ваша оценка
+            .js-stars.stars(data-rateyo-star-width="15px" data-rateyo-half-star="true")
+          label.group.add-review__group
+            input(type="text" required).group-input
+            span.group-placeholder Ваше имя
+          label.group.add-review__group
+            input(type="email" required).group-input
+            span.group-placeholder Почта *
+          label.group.add-review__group
+            input(type="email" required).group-input
+            span.group-placeholder Ваш отзыв *
+          .add-review__bottom
+            .file-upload
+              .file-upload__btn.button.button--rotate
+                label.file-upload__btn_label
+                  input(type="file")
+                  +icon('btn-hexagon')
+                  span.file-upload__btn_text Прикрепить фото
+              span.file-upload__text
+            button(type="submit" data-text="Оставить отзыв").button.button--rotate.button--fill
+              +icon('btn-hexagon')
+  section.products
+    +icon('decor-left', 'products__decor products__decor--left')
+    +icon('decor-right', 'products__decor products__decor--right')
+    .container
+      h2.title.products__title С этим товаром покупают
+      .products__slider
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд с Имбирём
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд Дикий Таёжный
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-3', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд с Черникой
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-1', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд Дикий Таёжный
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-2', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд Дикий Таёжный
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+        .products__slide
+          .product
+            .product__head
+              a(href="#").product__link
+                +picture('static/images/content/products', 'product-3', ['webp', 'png'], 'product__image')
+              a(href="#").product__title.title.title--small.title--is-decor Мёд с Черникой
+              span.product__desc Мёд дикий - это нектар с большого множества растений. Вся сила природы сосредоточена в этом великолепном меде! Янтарного цвета, очень вкусный.
+            .product__footer
+              .product__info
+                strong.product__price.price 581 ₽ / кг
+                a(href="#").product__basket
+                  +icon('cart', 'product__icon')
+
